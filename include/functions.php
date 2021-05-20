@@ -1,10 +1,9 @@
 <?php
+include 'config.php';
 error_log(json_encode($_POST)); 
 $val = $_POST["param"];
 header('Content-Type: application/json; charset=utf-8');
-$imapPath = '{imap.gmail.com:993/imap/ssl}INBOX';
-$username = 'infokutecrafts@gmail.com';
-$password = 'Credix.0001@';
+
 
 
 switch($val){
